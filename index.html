@@ -62,87 +62,81 @@
             </td>
           </tr>
           
-
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+            <tr>
+              <td>
                 <h2>Paper</h2>
-                
               </td>
             </tr>
           </tbody></table>
+
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          
-            <tr onmouseout="pix2pix3D_stop()" onmouseover="pix2pix3D_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+            
+            <tr onmouseout="db3d_stop()" onmouseover="db3d_start()">
+              <td style="padding-left:20px; padding-bottom:20px; width:25%;vertical-align:middle">
                 <div class="one">
-                  <div class="two" id='pix2pix3D_image'><video width="250" muted autoplay loop>
-                      <source src="images/axialVAE.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video></div>
-                  <img src='images/cVAE.JPEG' width="250">
+                  <div class="two" id='db3d_image'><video  width="160" muted autoplay loop>
+                  <source src="images/cvae_demo.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='images/cvaeCover.png' width="160" >
                 </div>
                 <script type="text/javascript">
-                  function pix2pix3D_start() {
-                    document.getElementById('pix2pix3D_image').style.opacity = "1";
+                  function db3d_start() {
+                    document.getElementById('db3d_image').style.opacity = "1";
                   }
-
-                  function pix2pix3D_stop() {
-                    document.getElementById('pix2pix3D_image').style.opacity = "0";
+      
+                  function db3d_stop() {
+                    document.getElementById('db3d_image').style.opacity = "0";
                   }
-                  pix2pix3D_stop()
+                  db3d_stop()
                 </script>
               </td>
-              <td style="padding-left:20px; padding-top:20px; width:50%;vertical-align:middle">
-
+              <td style="padding-left:20px;width:75%;vertical-align:middle">
                 <a href="https://openreview.net/forum?id=dPWotG03R-h">Investigate Sex Dimorphism of Cerebral Myelination Across Lifespan by Leveraging Conditional Variational Autoencoder</a>
                 <br>
                 <strong>Jinghang Li</strong>, Linghang Wang, Chang-le Chen, Tamer Ibrahim, Howard Aizenstein, Minjie Wu
                 <br> <br>
                 <em>MIDL Short Paper</em>, 2023
                 <br>
-                <p>We implemented a 3-D <em>cVAE</em> model, that's conditioned on age. </p>
+                <p>We implemented a 3-D <em>cVAE</em> model, that's conditioned on age. The model was trained on T1/T2 ratio image which quantifies cerebro overall white matter health. We then used the trained model to briefly investigate the sex differences in white matter aging.</p>
               </td>
             </tr>
 
-            <tr onmouseout="pix2pix3D_stop()" onmouseover="pix2pix3D_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+            <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+              <td style="padding-left:20px; padding-top:40px; width:25%;vertical-align:middle">
                 <div class="one">
-                  <div class="two" id='pix2pix3D_image'><video width="250" muted autoplay loop>
-                      <source src="images/axialVAE.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                    </video></div>
-                  <img src='images/cVAE.JPEG' width="250">
+                  <div class="two" id='malle_image'>
+                    <img src='images/wmh_after.png' width="160"></div>
+                  <img src='images/wmh_before.png' width="160">
                 </div>
                 <script type="text/javascript">
-                  function pix2pix3D_start() {
-                    document.getElementById('pix2pix3D_image').style.opacity = "1";
+                  function malle_start() {
+                    document.getElementById('malle_image').style.opacity = "1";
                   }
 
-                  function pix2pix3D_stop() {
-                    document.getElementById('pix2pix3D_image').style.opacity = "0";
+                  function malle_stop() {
+                    document.getElementById('malle_image').style.opacity = "0";
                   }
-                  pix2pix3D_stop()
+                  malle_stop()
                 </script>
               </td>
-              <td style="padding-left:20px; padding-top:20px; width:25%;vertical-align:middle">
-
-                <a href="https://openreview.net/forum?id=dPWotG03R-h">Investigate Sex Dimorphism of Cerebral Myelination Across Lifespan by Leveraging Conditional Variational Autoencoder</a>
+              <td style="padding:20px; padding-top:40px; width:75%;vertical-align:middle">
+                
+                  <span class="papertitle">wmh_seg: Transformer based U-Net for Robust and Automatic White Matter Hyperintensity Segmentation across 1.5T, 3T and 7T</span>
                 <br>
-                <strong>Jinghang Li</strong>, Linghang Wang, Chang-le Chen, Tamer Ibrahim, Howard Aizenstein, Minjie Wu
-                <br> <br>
-                <em>MIDL Short Paper</em>, 2023
-                <br>
-                <p>We propose <em>pix2pix3D</em>, a 3D-aware conditional generative model for controllable
-                  photorealistic image synthesis. Given a 2D label map, such as a segmentation or edge map, our model
-                  learns to synthesize a corresponding image from different viewpoints.</p>
+                <strong>Jinghang Li</strong>, Taylor Forry, Tales Santini, Yuanzhe Huang, Tamer Ibrahim, Howard Aizenstein, Minjie Wu.
+                <br/>
+                <br/>
+                <a href="https://github.com/jinghangli98/wmh_seg">project page</a>
+                /
+                Medical Image Analysis [under review]
+                <p></p>
+                <p>
+                We leveraged segformer backbone and did significant MR data augmentation for white matter hyperintensity segmentation on 1.5T, 3T, and 7T FLAIR images. Our model offers the <strong>most accurate</strong> segmentaions on 7T FLAIR images.
+                </p>
               </td>
             </tr>
-
-
-
-          </tbody></table>
 
           
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
