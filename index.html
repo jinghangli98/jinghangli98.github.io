@@ -1,0 +1,256 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Jinghang Li (李京航)</title>
+
+    <meta name="author" content="Jinghang Li">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Jinghang Li （李京航）
+                </p>
+                <p>I am a Graduate Student at the University of Pittsburgh advised under <a href="https://www.engineering.pitt.edu/people/faculty/tamer-ibrahim/">Dr. Tamer Ibrahim</a>  and <a href="https://www.google.com/glass/start/">Dr. Howard Aizenstein </a>. 
+                I am a part of <a href="https://rf-research-facility.engineering.pitt.edu/">7T RF Research Facility </a> and <a href="https://gpn.pitt.edu/">Geriatric Psychiatry Neuroimaging Lab</a>. My research focus entails applying deep learning models to medical image analysis.
+                </p>
+                <p>
+                  I'm interested in computer vision, deep learning, and image processing. Much of my research is about applying deep learning models on MR images where I investigated <strong>domain adaptation, image segmentaion, registration, and generative models. </strong>
+                </p>
+                <p style="text-align:center">
+                  <a href="mailto:jil202@pitt.edu">Email</a> &nbsp;/&nbsp;
+                  <a href="data/LI_CV.pdf">CV</a> &nbsp;/&nbsp;
+                  <a href="https://scholar.google.com/citations?user=jTxj8fQAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/JinghangLi98">Github</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:40%;max-width:40%">
+                <a href="images/jinghangli.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/jinghangli_circleCropped.png" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+            
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+
+              <h2>News</h2>
+              
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+            [05/23]  Our work on leveraging T1/T2 ratio on brain age prediction was accepted by <a href="https://openreview.net/forum?id=dPWotG03R-h">MIDL short paper track</a>!<br/>
+            [04/23]  Nominated as the <a href="images/TA.JPG"><strong>best department TA</strong> </a>of the year :)<br/>
+            [02/23]  Our abstract work on <a href="data/Domain_adaptation_ISMRM.pdf">domain adaptation </a>and <a href="data/PMB_alignment.pdf">post mortem imagery alignemnt </a>were accepted by ISMRM!<br/>
+            [06/22]  I passed my <a href="data/prelim.pdf">preliminary exam</a> without condition!<br/>
+            [04/21]  I accepted my bioengineering GSR letter from the University of Pittsburgh<br/>
+            </td>
+          </tr>
+          
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+
+                <h2>Paper</h2>
+                
+              </td>
+            </tr>
+          </tbody></table>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          
+            <tr onmouseout="pix2pix3D_stop()" onmouseover="pix2pix3D_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='pix2pix3D_image'><video width="250" muted autoplay loop>
+                      <source src="images/axialVAE.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video></div>
+                  <img src='images/cVAE.JPEG' width="250">
+                </div>
+                <script type="text/javascript">
+                  function pix2pix3D_start() {
+                    document.getElementById('pix2pix3D_image').style.opacity = "1";
+                  }
+
+                  function pix2pix3D_stop() {
+                    document.getElementById('pix2pix3D_image').style.opacity = "0";
+                  }
+                  pix2pix3D_stop()
+                </script>
+              </td>
+              <td style="padding-left:20px; padding-top:20px; width:50%;vertical-align:middle">
+
+                <a href="https://openreview.net/forum?id=dPWotG03R-h">Investigate Sex Dimorphism of Cerebral Myelination Across Lifespan by Leveraging Conditional Variational Autoencoder</a>
+                <br>
+                <strong>Jinghang Li</strong>, Linghang Wang, Chang-le Chen, Tamer Ibrahim, Howard Aizenstein, Minjie Wu
+                <br> <br>
+                <em>MIDL Short Paper</em>, 2023
+                <br>
+                <p>We implemented a 3-D <em>cVAE</em> model, that's conditioned on age. </p>
+              </td>
+            </tr>
+
+            <tr onmouseout="pix2pix3D_stop()" onmouseover="pix2pix3D_start()">
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='pix2pix3D_image'><video width="250" muted autoplay loop>
+                      <source src="images/axialVAE.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video></div>
+                  <img src='images/cVAE.JPEG' width="250">
+                </div>
+                <script type="text/javascript">
+                  function pix2pix3D_start() {
+                    document.getElementById('pix2pix3D_image').style.opacity = "1";
+                  }
+
+                  function pix2pix3D_stop() {
+                    document.getElementById('pix2pix3D_image').style.opacity = "0";
+                  }
+                  pix2pix3D_stop()
+                </script>
+              </td>
+              <td style="padding-left:20px; padding-top:20px; width:25%;vertical-align:middle">
+
+                <a href="https://openreview.net/forum?id=dPWotG03R-h">Investigate Sex Dimorphism of Cerebral Myelination Across Lifespan by Leveraging Conditional Variational Autoencoder</a>
+                <br>
+                <strong>Jinghang Li</strong>, Linghang Wang, Chang-le Chen, Tamer Ibrahim, Howard Aizenstein, Minjie Wu
+                <br> <br>
+                <em>MIDL Short Paper</em>, 2023
+                <br>
+                <p>We propose <em>pix2pix3D</em>, a 3D-aware conditional generative model for controllable
+                  photorealistic image synthesis. Given a 2D label map, such as a segmentation or edge map, our model
+                  learns to synthesize a corresponding image from different viewpoints.</p>
+              </td>
+            </tr>
+
+
+
+          </tbody></table>
+
+          
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+            <tr>
+              <td>
+                <h2>Abstract</h2>
+              </td>
+            </tr>
+          </tbody></table>
+          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+            
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:top"><img src="images/ISMRM.jpeg" width="160" height="160"></td>
+              <td width="75%" valign="center">
+                <a href="data/Domain_adaptation_ISMRM.pdf">7T to 3T domain adaptation in white matter lesion segmentation on T2-weighted (T2-w) FLAIR images using deep learning</a>
+                <br>
+                <strong>Jinghang Li</strong>, Eduardo Diniz, Taylor Forry, Tamer Ibrahim, Howard Aizenstein, and Minjie Wu
+                <br>
+                ISMRM, Toronto, Canada 2023
+                <br>
+                <br>
+                <a href="data/PMB_alignment.pdf">Automatic Alignment Of Ex-Vivo Brain Pathology To 7T Structural MRI</a>
+                <br>
+                <strong>Jinghang Li</strong>, Nadim Farhat, Jacob P. Berardinelli, Joseph M. Mettenburg, Howard J. Aizenstein, Julia K. Kofler, and Tamer S. Ibrahim
+                <br>
+                ISMRM, Toronto, Canada 2023
+                <br>
+                <br>
+                <a href="data/Longitudinal change of white matter-specific brain age is associated with Alzheimer's disease-related regional atrophy.pdf">Longitudinal Change Of White Matter-Specific Brain Age Is Associated With Alzheimer'S Disease-Related Regional Atrophy</a>
+                <br>
+                Chang-Le Chen, <strong>Jinghang Li</strong>, Linghai Wang, Noah Schweitzer, Dana Tudorascu, Howard Aizenstein, and Minjie Wu
+                <br>
+                ISMRM, Toronto, Canada 2023
+                <br>
+                <br>
+                <a href="data/cuttingGuide.pdf">Postmortem Imaging with Reusable 3D Printed Ex Vivo Brain Enclosures/Cutting Guide for MRI Registration with Gross Anatomy Photographs at 7T
+                </a>
+                <br>
+                Jacob Berardinelli, Julia Kofler, <strong>Jinghang Li</strong>, Owen Flaugh, Nadim Farhat, Tales Santini, Andrea Sajewski, Noah Schweitzer, Joseph Mettenburg, Milos Ikonomovic, Howard J. Aizenstein, and Tamer S. Ibrahim
+                <br>
+                ISMRM, Toronto, Canada 2023
+                <br>
+                <br>
+                <a href="data/60Ch.pdf">An Open 60-channel Tx/ 32-channel Rx RF Coil System for Routine Use at 7T</a>
+                <br>
+                Andrea Sajewski, Tales Santini, Anthony DeFranco, Boris Keil, Hecheng Jin, Jacob Berardinelli, <strong>Jinghang Li</strong>, Cong Chu, Tiago Martins, and Tamer Ibrahim
+                <br>
+                ISMRM, Toronto, Canada 2023 <font color="red"><strong>(Oral Presentation, Magna Cum Laude Merit Award)</strong></font> 
+                <br>
+                <br>
+                Hippocampal Subfields Volume in Middle Age Healthy Adults
+                <br>
+                Salem Alkhateeb, Tales Santini, <strong>Jinghang Li</strong>, Robin Chu, Daniel Ibrahim, Anna Marsland, Stephen Manuck, Pete Gianaros, and Tamer Ibrahim.
+                <br>
+                ISMRM, London, United Kingdom 2022
+              </td>
+            </tr>
+            
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:top">
+                <img src="images/aaic.png"  width="160" height="160">
+              </td>
+              <td width="75%" valign="center">
+                <a href="data/AAIC_WMH_abstract.pdf">Investigating white matter hyperintensities in a multicenter COVID-19 study using 7T MRI</a>
+                <br>
+                <strong>Jinghang Li</strong>, Jr-Jiun Liou, Tales Santini, Salem Alkateeb, Oluwatobi Adeyemi, Gabriel Erausquin, Valentina Garbarino, Monica Goss, Mohamad Habes, Jayandra Himali, Christof Karmonik, Karl Li, Joseph Masdeu, Rejani Nair, Vibhuti Patel, Beth Snitz, Howard Aizenstein, Minjie Wu , Richard Bowtell, Gowland Penny, Gustavo Roman, Mary Ganguli, Farhaan Vahidy, Timothy Girard, Heidi Jacobs Akram Hosseini, Sudha Seshadri and Tamer Ibrahim.
+                <br>
+                AAIC, Amsterdam, Netherland 2023 <font color="red"><strong>(Oral Presentation)</strong></font> 
+              </td>
+            </tr>
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+              <tr>
+                <td>
+                  <h2>Teaching</h2>
+                </td>
+              </tr>
+            </tbody></table>
+            <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+              
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/Pitt.svg" width="160" height="160"></td>
+                <td width="75%" valign="center">
+                  <h3> Teaching Assistant</h3>
+                  <li> BIOENG 1680: BIOMEDICAL APPLC OF CONTROL | Spring 2023</li>
+                  <br>
+                  <li> BIOENG 1320: BIOLOGICAL SIGNALS AND SYSTEMS | Fall 2022 </li>
+                  <br>
+                </td>
+      
+          </tbody></table>
+
+          <table
+          style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:center;font-size:small;">
+                  Template borrowed from <a href="https://github.com/jonbarron/jonbarron_website">Jon Barron</a>
+                </p>
+              </td>
+            </tr>
+          </tbody>
+          </table>
+
+
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
