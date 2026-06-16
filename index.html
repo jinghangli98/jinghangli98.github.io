@@ -54,11 +54,17 @@
         
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
+            <!-- NEWS:START (generated — edit career/sources/news.yaml, run `make sync-web`) -->
+            [05/26]  Our work <a href="https://arxiv.org/abs/2605.21669">MRecover</a> — recovering motion-corrupted MRI with AI-generated contrast — is on arXiv! <a href="https://jinghangli98.github.io/MRecover/">[project page]</a><br/>
+            [04/26]  Won <strong>3rd place</strong> at the University of Pittsburgh Big Idea Competition!<br/>
+            [10/25]  Our white-matter lesion sampling workflow was published in the <a href="https://doi.org/10.1111/jon.70094">Journal of Neuroimaging</a>!<br/>
+            [02/24]  Our <a href="https://arxiv.org/abs/2402.12701">wmh_seg</a> paper — robust WMH segmentation across 1.5T/3T/7T — is on arXiv!<br/>
             [05/23]  Our work on leveraging T1/T2 ratio on brain age prediction was accepted by <a href="https://openreview.net/forum?id=dPWotG03R-h">MIDL short paper track</a>!<br/>
-            [04/23]  Nominated as the <a href="images/TA.JPG"><strong>best department TA</strong> </a>of the year :)<br/>
-            [02/23]  Our abstract work on <a href="data/Domain_adaptation_ISMRM.pdf">domain adaptation </a>and <a href="data/PMB_alignment.pdf">post mortem imagery alignemnt </a>were accepted by ISMRM!<br/>
+            [04/23]  Nominated as the <a href="images/TA.JPG"><strong>best department TA</strong></a> of the year :)<br/>
+            [02/23]  Our abstract work on <a href="data/Domain_adaptation_ISMRM.pdf">domain adaptation</a> and <a href="data/PMB_alignment.pdf">post mortem imagery alignment</a> were accepted by ISMRM!<br/>
             [06/22]  I passed my <a href="data/prelim.pdf">preliminary exam</a> without condition!<br/>
             [04/21]  I accepted my bioengineering GSR letter from the University of Pittsburgh<br/>
+            <!-- NEWS:END -->
             </td>
           </tr>
           
@@ -72,71 +78,95 @@
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             
-            <tr onmouseout="db3d_stop()" onmouseover="db3d_start()">
+            <!-- PAPERS:START (generated — edit career/sources/publications.yaml, run `make sync-web`) -->
+            <tr onmouseout="pub1_stop()" onmouseover="pub1_start()">
               <td style="padding-left:20px; padding-bottom:20px; width:25%;vertical-align:middle">
                 <div class="one">
-                  <div class="two" id='db3d_image'><video  width="160" muted autoplay loop>
-                  <source src="images/cvae_demo.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                  </video></div>
-                  <img src='images/cvaeCover.png' width="160" >
+                  <div class="two" id='pub1_image'><img src='images/mrecover_t2w.png' width='160'></div>
+                  <img src='images/mrecover_t1.png' width='160'>
                 </div>
                 <script type="text/javascript">
-                  function db3d_start() {
-                    document.getElementById('db3d_image').style.opacity = "1";
-                  }
-      
-                  function db3d_stop() {
-                    document.getElementById('db3d_image').style.opacity = "0";
-                  }
-                  db3d_stop()
+                  function pub1_start() { document.getElementById("pub1_image").style.opacity = "1"; }
+                  function pub1_stop() { document.getElementById("pub1_image").style.opacity = "0"; }
+                  pub1_stop()
                 </script>
               </td>
               <td style="padding-left:20px;width:75%;vertical-align:middle">
-                <a href="https://openreview.net/forum?id=dPWotG03R-h">Investigate Sex Dimorphism of Cerebral Myelination Across Lifespan by Leveraging Conditional Variational Autoencoder</a>
+                <span class="papertitle">MRecover: A Conditional Generative Model for Recovering Motion-Corrupted MR Images Using AI Generated Contrast</span>
+                <br>
+                <strong>Jinghang Li</strong>, Tales Santini, Courtney Clark, Bruno de Almeida, Cong Chu, Salem Alkhateeb, et al., Minjie Wu, Tamer S. Ibrahim
+                <br> <br>
+                <em>arXiv, 2026</em>
+                <br>
+                <a href="https://arxiv.org/abs/2605.21669">paper</a> / <a href="https://jinghangli98.github.io/MRecover/">project page</a> / <a href="https://github.com/jinghangli98/MRecover">code</a> / <a href="https://huggingface.co/jil202/MRecover">model</a>
+                <p>A conditional generative model that synthesizes T2w-TSE contrast from routinely acquired T1w images, recovering motion-corrupted hippocampal MRI without re-scanning. 7T→3T transfer reaches subfield-volume correlation r=0.87–0.97 and improves analyzable subjects by 31.8%, with under 30 s full-volume single-step inference.</p>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding-left:20px; padding-bottom:20px; width:25%;vertical-align:middle">
+                &nbsp;
+              </td>
+              <td style="padding-left:20px;width:75%;vertical-align:middle">
+                <span class="papertitle">Bridging Neuroimaging and Neuropathology: A Comprehensive Workflow for Targeted Sampling of White Matter Lesions</span>
+                <br>
+                <strong>Jinghang Li</strong>, Nadim Farhat, Jacob Berardinelli, Joseph Mettenburg, Howard Aizenstein, Tamer Ibrahim
+                <br> <br>
+                <em>Journal of Neuroimaging, 2025</em>
+                <br>
+                <a href="https://doi.org/10.1111/jon.70094">paper</a>
+                <p>An end-to-end workflow bridging in-vivo neuroimaging and post-mortem neuropathology for targeted sampling of white matter lesions.</p>
+              </td>
+            </tr>
+
+            <tr onmouseout="pub3_stop()" onmouseover="pub3_start()">
+              <td style="padding-left:20px; padding-bottom:20px; width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='pub3_image'><img src='images/wmh_after.png' width='160'></div>
+                  <img src='images/wmh_before.png' width='160'>
+                </div>
+                <script type="text/javascript">
+                  function pub3_start() { document.getElementById("pub3_image").style.opacity = "1"; }
+                  function pub3_stop() { document.getElementById("pub3_image").style.opacity = "0"; }
+                  pub3_stop()
+                </script>
+              </td>
+              <td style="padding-left:20px;width:75%;vertical-align:middle">
+                <span class="papertitle">wmh_seg: Transformer based U-Net for Robust and Automatic White Matter Hyperintensity Segmentation across 1.5 T, 3T and 7T.</span>
+                <br>
+                <strong>Jinghang Li</strong>, Taylor Forry, Tales Santini, Yuanzhe Huang, Tamer Ibrahim, Howard Aizenstein, Minjie Wu
+                <br> <br>
+                <em>arXiv, 2024</em>
+                <br>
+                <a href="https://github.com/jinghangli98/wmh_seg">project page</a> / <a href="https://arxiv.org/abs/2402.12701">paper</a>
+                <p>We leveraged a SegFormer backbone with heavy MR data augmentation for white matter hyperintensity segmentation on 1.5T, 3T, and 7T FLAIR images. Our model offers the most accurate segmentations on 7T FLAIR images.</p>
+              </td>
+            </tr>
+
+            <tr onmouseout="pub4_stop()" onmouseover="pub4_start()">
+              <td style="padding-left:20px; padding-bottom:20px; width:25%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='pub4_image'><video width="160" muted autoplay loop><source src="images/cvae_demo.mp4" type="video/mp4">Your browser does not support the video tag.</video></div>
+                  <img src='images/cvaeCover.png' width='160'>
+                </div>
+                <script type="text/javascript">
+                  function pub4_start() { document.getElementById("pub4_image").style.opacity = "1"; }
+                  function pub4_stop() { document.getElementById("pub4_image").style.opacity = "0"; }
+                  pub4_stop()
+                </script>
+              </td>
+              <td style="padding-left:20px;width:75%;vertical-align:middle">
+                <span class="papertitle">Investigate Sex Dimorphism of Cerebral Myelination Across Lifespan by Leveraging Conditional Variational Autoencoder</span>
                 <br>
                 <strong>Jinghang Li</strong>, Linghang Wang, Chang-le Chen, Tamer Ibrahim, Howard Aizenstein, Minjie Wu
                 <br> <br>
-                <em>MIDL Short Paper</em>, 2023
+                <em>MIDL Short Paper, 2023</em>
                 <br>
-                <p>We implemented a 3-D <em>cVAE</em> model, that's conditioned on age. The model was trained on T1/T2 ratio image which quantifies cerebro overall white matter health. We then used the trained model to briefly investigate the sex differences in white matter aging.</p>
+                <a href="https://openreview.net/forum?id=dPWotG03R-h">paper</a>
+                <p>We implemented a 3-D cVAE conditioned on age, trained on the T1/T2 ratio image (a proxy for overall white-matter health), and used it to investigate sex differences in white-matter aging.</p>
               </td>
             </tr>
-
-            <tr onmouseout="malle_stop()" onmouseover="malle_start()">
-              <td style="padding-left:20px; padding-top:40px; width:25%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='malle_image'>
-                    <img src='images/wmh_after.png' width="160"></div>
-                  <img src='images/wmh_before.png' width="160">
-                </div>
-                <script type="text/javascript">
-                  function malle_start() {
-                    document.getElementById('malle_image').style.opacity = "1";
-                  }
-
-                  function malle_stop() {
-                    document.getElementById('malle_image').style.opacity = "0";
-                  }
-                  malle_stop()
-                </script>
-              </td>
-              <td style="padding:20px; padding-top:40px; width:75%;vertical-align:middle">
-                
-                  <span class="papertitle">wmh_seg: Transformer based U-Net for Robust and Automatic White Matter Hyperintensity Segmentation across 1.5T, 3T and 7T</span>
-                <br>
-                <strong>Jinghang Li</strong>, Taylor Forry, Tales Santini, Yuanzhe Huang, Tamer Ibrahim, Howard Aizenstein, Minjie Wu.
-                <br/>
-                <br/>
-                <a href="https://github.com/jinghangli98/wmh_seg">project page</a>
-                /
-                [in submission]
-                <p></p>
-                <p>
-                We leveraged segformer backbone and did significant MR data augmentation for white matter hyperintensity segmentation on 1.5T, 3T, and 7T FLAIR images. Our model offers the <strong>most accurate</strong> segmentaions on 7T FLAIR images.
-                </p>
-              </td>
-            </tr>
+            <!-- PAPERS:END -->
 
           
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
